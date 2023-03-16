@@ -98,6 +98,7 @@ textarea {
 html {
   background-color: #222;
   height: 100%;
+  width: 100%; /*Control code*/
 }
 
 body {
@@ -105,20 +106,24 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  color: #fff;
+  /*display: flex;*/ /*Control code*/
+  /*justify-content: center;*/ /*Control code*/
 }
 
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  /* font-weight: 700; */
   display: flex;
   justify-content: space-around;
+  border-bottom: 0.1px solid #fff;
+  padding-bottom: 5px;
 }
 
 .div-1,
 .div-2,
 .div-3 {
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
   line-height: 1.5em;
   font-size: 1em;
   height: 300px;
@@ -131,13 +136,34 @@ body {
 span {
   border-left: 0.1px solid #fff;
   border-right: 0.1px solid #fff;
-  height: 75%;
+  /* height: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
+.greeting {
+  color: #fff;
+  width: 100%;
+  font-size: 3.5em;
+  font-weight: 600;
+  padding-bottom: 50px;
+  font-family: "Lora";
+}
+
+.intro {
+  color: #fff;
+  width: 100%;
+  border-bottom: 0.1px solid #fff;
+  padding-bottom: 25px;
+  font-size: 1.25em;
+}
+
+.intro b {
+  font-family: "lora";
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
